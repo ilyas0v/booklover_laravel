@@ -22,3 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/book' , function(){
   return view('book');
 })->name('book');
+Route::get('/search', function () {
+    return view('search');
+})->name('search');
+Route::get('/author', function () {
+    return view('author');
+})->name('author');
