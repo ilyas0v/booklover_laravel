@@ -391,3 +391,27 @@ a:hover{
 .invalid-feedback{
   color:red;
 }
+.search-bar{
+  margin:0 !important;
+  padding: 0 !important;
+  line-height: 50px  !important;
+  border: none !important;
+  font-size: 40px !important;
+  height: 50px !important;
+}
+.genre_style{
+  margin:10px 0 0 10px !important;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.genre_style:hover{
+  color: #fbba42 !important;
+}
+.author-main{
+  font-size:25px !important;
+  color:#333;
+}
+.author-description{
+  text-align: justify !important;
+}
