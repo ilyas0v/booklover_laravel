@@ -1,0 +1,393 @@
+.navbar-inverse{
+  background-color: #3b3f42;
+}
+
+.navbar-fixed{
+  position:fixed;
+  width:100%;
+  top:0px;
+  z-index: 10000;
+  border-radius: 0;
+}
+
+.footer-fixed{
+  position: fixed;
+  width:100%;
+  bottom:0px;
+  z-index:10000;
+  background: #3b3f42;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price{
+  position: absolute;
+  top:0;
+  right:0;
+  padding:5px 15px;
+  background:#fbba42;
+  color:#fff;
+  border-radius: 0 0 0 10px;
+  z-index:100;
+  font-size:20px;
+}
+
+.img-wrapper{
+  overflow: hidden;
+}
+
+footer p{
+  color:#9d9d9d;
+  margin:0;
+  padding-right: 15px;
+}
+
+footer ul{
+  margin:0;
+  padding:0;
+}
+
+footer li{
+  float:left;
+  list-style-type: none;
+}
+
+footer li a{
+  color:#9d9d9d;
+  text-decoration: none;
+  display: block;
+  padding:5px 15px;
+}
+
+footer a:hover{
+  color:white;
+}
+
+.navbar{
+  border:0;
+  padding: 5px 0;
+  margin:0;
+}
+
+h1.page-main-title{
+  margin: 0;
+  color:white;
+  font-size:70px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin:10px;
+}
+
+
+.rounded-button{
+  background-color: #fbba42;
+  color:white !important;
+  padding:5px 10px !important;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.rounded-button:hover{
+  background-color: #e19b1b !important;
+}
+
+.nav.navbar-nav{
+  display:flex !important;
+  align-items:center;
+}
+
+.with-background{
+  padding:0;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  height:300px;
+  margin-top: 60px;
+  background-attachment: fixed;
+}
+
+.col{
+  padding: 10px;
+}
+
+.discover-books{
+  padding-bottom:100px !important;
+}
+
+.box{
+  padding: 10px;
+  box-shadow: 1px 1px 10px grey;
+  margin:5px;
+  position: relative;
+}
+
+.box img{
+  width: 100%;
+  transition: .3s transform;
+}
+
+.box:hover img{
+  transform: scale(1.1);
+}
+
+.box:hover{
+  box-shadow:1px 1px 20px grey;
+}
+
+.book-title{
+  margin-top:10px;
+}
+
+.book-author{
+  margin: 0;
+  font-size:17px;
+}
+
+.book-genre{
+  font-size:13px;
+}
+
+.short-line{
+  width:20%;
+  margin:0;
+  margin-top:5px;
+}
+
+.long-line{
+  margin-top:0;
+  margin-bottom: 5px;;
+}
+
+.transparent-layer{
+  position: abbsolute;
+  width: 100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.categories-with-nav{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.navbar-brand{
+  padding:0;
+  padding-left:15px !important;
+  display: flex;
+  align-items: center;
+}
+
+.nav-pills .active a{
+  background-color: #3b3f42 !important;
+}
+
+
+.login-form{
+  width: 300px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px){
+  h1.page-main-title{
+    font-size:50px;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  h1.page-main-title{
+    font-size:40px;
+  }
+
+  #birinci_logo{
+    display: none;
+  }
+
+  #ikinci_logo{
+    display: block;
+  }
+
+  footer{
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #myNavbar{
+    display: flex !important;
+    justify-content: center;
+  }
+
+  #birinci_logo{
+    display: block;
+  }
+
+  #ikinci_logo{
+    display: none;
+  }
+
+  .search-on-right{
+    position: absolute;
+    right:15px;
+  }
+}
+
+
+/* BOOK page */
+.book-authors{
+  color:grey;
+  margin:0;
+  font-size:20px;
+}
+
+.book-rating{
+  margin-top:10px;
+}
+
+.book-description{
+  font-size:15px;
+}
+
+.share p{
+  font-size:19px;
+}
+
+.rec-books > div{
+  margin-top:10px;
+}
+
+.user-image-thumb{
+  height:50px;
+  border-radius: 50%;
+}
+
+.panel-title{
+  display: inline;
+}
+
+.main_color{
+  background: #3b3f42 !important;
+}
+
+.checked-star{
+  color:orange;
+}
+
+.rate-book{
+  text-align: center;
+}
+
+.rate-book > p{
+  margin:0 !important;
+  margin-top:10px !important;
+}
+
+.big-star{
+  font-size:30px;
+  cursor:pointer;
+}
+
+
+a:hover{
+  text-decoration: none!important;
+}
+
+.search-icon{
+  position: absolute;
+  float: right;
+  top: 20px;
+  right: 27px;
+  font-size: 18px;
+}
+
+.search-form-simple{
+  margin:0 !important;
+  padding:0 !important;
+}
+
+
+/*  Loader for splash screen  */
+
+.loader {
+  //border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #fbba42;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-inner {
+  //border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #fbba42;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin-reverse 1s linear infinite;
+  animation: spin-reverse 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-inner-inner {
+  //border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #fbba42;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 0.5s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin-reverse {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Loader end.. */
+
+.loader-container{
+  position: fixed;
+  z-index:1000000;
+  width:100%;
+  height:100%;
+  top:0px;
+  background-color: #3b3f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.invalid-feedback{
+  color:red;
+}
