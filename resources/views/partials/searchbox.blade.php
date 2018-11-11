@@ -8,7 +8,7 @@
         </label>
         <input type="text" placeholder="Search..." autofocus name="keyword" style="height: 40px;font-size:25px;" class="form-control" value="">
       </form>
-      <div style="text-align:right;"><a href="#" style="color:#fbba42;font-weight:bold">Advanced search</a></div>
+      <div style="text-align:right;"><a href="{{route('search')}}" style="color:#fbba42;font-weight:bold">Advanced search</a></div>
     </div>
   </div>
 </div>
