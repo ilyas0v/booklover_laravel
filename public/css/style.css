@@ -415,3 +415,10 @@ a:hover{
 .author-description{
   text-align: justify !important;
 }
+.panel-book{
+
+}
+.panel-book:hover{
+    color: #fbba42;
+    cursor: pointer;
+}
