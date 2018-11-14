@@ -21,7 +21,7 @@
 
     <div class="col col-md-5 col-sm-9">
       <h1 class="book-title">Memoirs of a Geisha</h1>
-      <h2 class="book-authors">By Arthur Golden</h2>
+      <h2 class="book-authors">By <a class="page-link" href="{{route('author')}}">Arthur Golden</a></h2>
       <div class="book-rating">
         <span  class="checked-star glyphicon glyphicon-star" aria-hidden="true"></span>
         <span  class="checked-star glyphicon glyphicon-star" aria-hidden="true"></span>

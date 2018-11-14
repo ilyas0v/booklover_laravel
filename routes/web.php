@@ -28,3 +28,6 @@ Route::get('/search', function () {
 Route::get('/author', function () {
     return view('author');
 })->name('author');
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');

@@ -17,7 +17,7 @@
                         <?php if(isset($_GET['searchby'])) echo $_GET['searchby']; else echo 'Book name'?>&#9660;
                     </button>
                     <div class="dropdown-menu" aria-labelledby="SearchByButton">
-                        <form action="./search.php" method="get">
+                        <form action="{{'search'}}" method="get">
                             <input type="submit" name="searchby" value="Book name" class="genre_style"/></br>
                             <input type="submit" name="searchby" value="Author" class="genre_style"/></br>
                             <input type="submit" name="searchby" value="ISBN" class="genre_style"/></br>
@@ -31,7 +31,7 @@
                         <?php if(isset($_GET['genre'])) echo $_GET['genre']; else echo 'Genre'?> &#9660;
                     </button>
                     <div class="dropdown-menu" style="max-width: 350px" aria-labelledby="GenreButton">
-                        <form action="./search.php" method="get">
+                        <form action="{{'search'}}" method="get">
                             <?php for($i=1;$i<=10;$i++){?>
                             <input type="submit"name="genre" value="Genre <?=$i?>" class="genre_style"/>
                             <?php }?>
@@ -43,7 +43,7 @@
                         <?php if(isset($_GET['lang'])) echo $_GET['lang']; else echo 'Language'?> &#9660;
                     </button>
                     <div class="dropdown-menu" aria-labelledby="LanguageButton">
-                        <form action="./search.php" method="get">
+                        <form action="{{'search'}}" method="get">
                             <input type="submit"name="lang" value="English" class="genre_style"/></br>
                             <input type="submit"name="lang" value="Azerbaijani" class="genre_style"/></br>
                             <input type="submit"name="lang" value="Russian" class="genre_style"/></br>

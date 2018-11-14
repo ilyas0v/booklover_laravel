@@ -9,7 +9,7 @@
                 <h1 class="author-main">Arthur Golden</h1>
                 <hr style="border: 0.5px solid #fbba42" >
                 <b style="display: inline-block; float: left; margin: 0 5px">Born:</b> <p>Berlin, Germany. 12-Dec-1965</p>
-                <b style="display: inline-block; float: left; margin: 0 5px">Genre:</b> <p><a href="./search.php?genre=Graphic+novel">Graphic novel</a>,<a href="./search.php?genre=Romance">Romance</a>,<a href="./search.php?genre=Comics">Comics</a></p>
+                <b style="display: inline-block; float: left; margin: 0 5px">Genre:</b> <p><a href="{{route('search',['genre'=>'Graphic novel'])}}">Graphic novel</a>,<a href="{{route('search',['genre'=>'Romance'])}}">Romance</a>,<a href="{{route('search',['genre'=>'Comics'])}}">Comics</a></p>
                 <p class="author-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
