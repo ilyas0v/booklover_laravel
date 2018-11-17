@@ -31,3 +31,7 @@ Route::get('/author', function () {
 Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
