@@ -27,4 +27,7 @@ class User extends \TCG\Voyager\Models\User
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function read_books(){
+        return $this->hasMany('App\Book','book_user');
+    }
 }
