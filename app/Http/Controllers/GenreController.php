@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Genre;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class GenreController extends Controller
 {
@@ -14,7 +15,12 @@ class GenreController extends Controller
      */
     public function index()
     {
-        //
+        $genres = DB::table('genres')->get();
+        return $genres;
+    }
+    public function select($id){
+        $genres = DB::table('genres')->where('id',$id)->get();
+        return $genres;
     }
 
     /**

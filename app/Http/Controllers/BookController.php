@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Book;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BookController extends Controller
 {
@@ -14,7 +15,12 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+
+    }
+    public function select($name)
+    {
+       $books = DB::table('books')->where('name','like','%'.$name.'%')->get();
+        return $books;
     }
 
     /**
