@@ -1,15 +1,26 @@
 @extends('layouts.layout')
     @section('content')
+        @php
+            if(isset($_GET['profile']))
+            {
+                $user_id=$_GET['profile'];
+                $new_user=true;
+            }
+            else{
+
+                $user_id= \Illuminate\Support\Facades\Auth::id();
+            }
+        @endphp
         <div class="container" style="margin-top: 70px;">
             <div class="row">
                 <div class="col col-md-3" >
-                    <img src="images/profile.png" class="img-circle center-block">
+                    <img src="{{asset('images/'.Auth::user()->profile_img)}}" class="img-circle center-block">
                 </div>
                 <div class="col col-md-8">
-                    <h3 style="display: inline-block;padding: 0">Name Surname </h3>
+                    <h3 style="display: inline-block;padding: 0"><?= \Illuminate\Support\Facades\Auth::user()->name." ".\Illuminate\Support\Facades\Auth::user()->surname?> </h3>
                     <hr style="border: 0.5px solid #fbba42;margin: 10px 0" >
-                    <b style="display: inline-block;float: left">Birthday: &nbsp;</b><p>1-Jan-1997</p>
-                    <b style="display: inline-block;float: left">Activity: &nbsp;</b><p>Joined on 10-Nov-2018</p>
+                    <b style="display: inline-block;float: left">Birthday: &nbsp;</b><p>@php $_date=\Illuminate\Support\Facades\Auth::user()->date_of_birth; echo date("j F Y",strtotime($_date)); @endphp</p>
+                    <b style="display: inline-block;float: left">Activity: &nbsp;</b><p>Joined on <?= date('j-M-Y',strtotime(\Illuminate\Support\Facades\Auth::user()->created_at))?></p>
                 </div>
                 <div class="col col-md-11 categories-with-nav" style="border-top:1px solid lightgray; border-bottom: 1px solid lightgray">
                         <ul class="nav nav-pills">
@@ -23,6 +34,7 @@
             </div>
         </div>
         <script>
+            allClick();
             function allClick() {
                 document.getElementById("allBtn").classList.add("active");
                 document.getElementById("favBtn").classList.remove("active");
