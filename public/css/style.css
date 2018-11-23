@@ -405,6 +405,19 @@ a:hover{
   border: none !important;
   outline: none !important;
 }
+.genre_style_a{
+  color: black !important;
+  padding: 1px 6px;
+  margin:10px 0 0 10px !important;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  font: none 22px Arial;
+  text-decoration: none !important;
+}
+.genre_style_a:hover{
+  color: #fbba42 !important;
+}
 .genre_style:hover{
   color: #fbba42 !important;
 }

@@ -9,8 +9,9 @@ class Book extends Model
     public function tags(){
         return $this->belongsToMany('App\Tag');
     }
-    public function genres(){
-        return $this->belongsToMany('App\Genre');
+    public function genre()
+    {
+        return $this->belongsTo('App\Genre','genre_id');
     }
     public function comments(){
         return $this->hasMany('App\Comment');

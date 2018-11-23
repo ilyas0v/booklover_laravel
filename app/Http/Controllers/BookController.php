@@ -23,6 +23,43 @@ class BookController extends Controller
         return $books;
     }
 
+    public function isbn($isbn)
+    {
+            $books = Book::where('isbn', $isbn)->get();
+            return view('search')->withBooks($books);
+    }
+    public function lang($language)
+    {
+        $books = Book::where('language', $language)->get();
+        return view('search')->withBooks($books);
+    }
+    public function book($name)
+    {
+        $books = Book::where('name','like', '%'.$name.'%')->get();
+        //var_dump($books);exit();
+        return view('search')->withBooks($books);
+    }
+    public function year($year)
+    {
+        $books = Book::where('year',$year)->get();
+        return view('search')->withBooks($books);
+    }
+    public function publisher($name)
+    {
+        $books = Book::where('publisher','like', '%'.$name.'%')->get();
+        return view('search')->withBooks($books);
+    }
+    public function author($name)
+    {
+        $books = Book::where('author','like', '%'.$name.'%')->get();
+        return view('search')->withBooks($books);
+    }
+    public function id($id)
+    {
+        $books = Book::where('id',$id)->get()[0];
+        return view('book')->withBooks($books);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

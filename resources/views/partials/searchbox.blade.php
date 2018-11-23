@@ -1,7 +1,7 @@
 <div style="z-index:10000000;padding:20px;background: rgba(0, 0, 0, 0.7);" class="modal fade search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-hidden="true">
   <div class="modal-dialog modal-lg" style="margin-top: 100px">
     <div class="modal-content" style="background: transparent;padding:10px 20px;">
-      <form class="search-form-simple" action="" method="GET">
+      <form class="search-form-simple" action="{{route('search')}}" method="GET">
         <label class="search-icon">
         <input style="display:none" type="submit" value="">
         <span  style="color:grey" class="glyphicon glyphicon-search" aria-hidden="true"></span>
