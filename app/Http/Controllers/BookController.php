@@ -56,8 +56,11 @@ class BookController extends Controller
     }
     public function id($id)
     {
-        $books = Book::where('id',$id)->get()[0];
-        return view('book')->withBooks($books);
+        $books = Book::find($id);
+        $path = $books->path;
+        $path = json_decode($path)[0];
+        $pdf = $path->download_link;
+        return view('book')->withBooks($books)->withPdf($pdf);
     }
 
     /**
