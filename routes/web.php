@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
+Route::get('/settings', function () {
+    return view('settings');
+})->name('settings');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -41,6 +45,7 @@ Route::any('/search/author/{author}','BookController@author');
 Route::any('/search/publisher/{publisher}','BookController@publisher');
 Route::get('/search/lang/{language}','BookController@lang');
 Route::get('/book/{id}','BookController@id');
+
 
 
 
