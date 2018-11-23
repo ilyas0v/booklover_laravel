@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\Genre;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -58,6 +59,13 @@ class BookController extends Controller
     {
         $books = Book::where('id',$id)->get()[0];
         return view('book')->withBooks($books);
+    }
+    public function genre($genre)
+    {
+        $genres = Genre::where('name',$genre)->get()[0];
+
+        $books = Book::where('genre_id',$genres->id)->get();
+        return view('search')->withBooks($books);
     }
 
     /**

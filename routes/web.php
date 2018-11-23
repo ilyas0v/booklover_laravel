@@ -33,7 +33,7 @@ Route::get('/profile', function () {
 })->name('profile');
 
 Route::get('/author/{author_name}', 'AuthorsController@select');
-Route::get('/search/genre/{genre}','BookGenreController@genre');
+Route::get('/search/genre/{genre}','BookController@genre');
 Route::any('/search/isbn/{isbn}','BookController@isbn');
 Route::any('/search/book/{book}','BookController@book');
 Route::any('/search/year/{year}','BookController@year');
