@@ -435,3 +435,8 @@ a:hover{
     color: #fbba42;
     cursor: pointer;
 }
+
+
+.glyphicon-star{
+  letter-spacing: 2px !important;
+}
