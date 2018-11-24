@@ -3,7 +3,7 @@
 @section('content')
     @if(\Illuminate\Support\Facades\Auth::check())
     <div class="container" style="margin-top:70px;margin-bottom:100px; ">
-        <form class="" action="" method="post">
+        <form  action="{{route('settings')}}" method="post">
             <div class="row">
                 <div class="col col-md-3">
                     <img src="{{asset('images/'.Auth::user()->profile_img)}}" class="img-circle center-block">
@@ -57,11 +57,11 @@
                         </div>
 
                         <br/>
-                        <input type="password" name="password" placeholder="current password" class="form-control" value="">
+                        <input type="password" name="password" placeholder="Current password" class="form-control" value="">
 
 
                         <br/>
-                        <input type="password" name="password" placeholder="new password" class="form-control" value="">
+                        <input type="password" name="new_password" placeholder="New password" class="form-control" value="">
 
                         <br/>
                         <input type="password" name="password_repeat" placeholder="Repeat password" class="form-control" value="">
