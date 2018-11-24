@@ -119,6 +119,10 @@ h1.page-main-title{
   box-shadow: 1px 1px 10px grey;
   margin:5px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 400px;
 }
 
 .box img{

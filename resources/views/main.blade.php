@@ -29,8 +29,10 @@
             <hr class="short-line">
             <a href="{{route('search_for_genre',$book->genre->name)}}" class="book-genre">{{$book->genre->name}}</a>
             <hr class="long-line">
-            <span style="color:grey" class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span><b>{{$book->avg_rate()}}</b></span>
+            <p>
+              <span style="color:grey" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span><b>{{$book->avg_rate()}}</b></span>
+            </p>
           </div>
         </a>
       </div>
