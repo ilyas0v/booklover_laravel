@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\Genre;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -61,6 +62,13 @@ class BookController extends Controller
         $path = json_decode($path)[0];
         $pdf = $path->download_link;
         return view('book')->withBooks($books)->withPdf($pdf);
+    }
+    public function genre($genre)
+    {
+        $genres = Genre::where('name',$genre)->get()[0];
+
+        $books = Book::where('genre_id',$genres->id)->get();
+        return view('search')->withBooks($books);
     }
 
     /**
