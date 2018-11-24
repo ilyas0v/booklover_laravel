@@ -1,4 +1,12 @@
 @extends('layouts.layout')
+@section('title' , $books->name)
+@section('meta')
+<meta property="og:url"   content="{{url()->current()}}" />
+  <meta property="og:type"  content="website" />
+  <meta property="og:title" content="{{$books->name}}" />
+  <meta property="og:description"   content="{{$books->description}}" />
+  <meta property="og:image"  content="{{asset('storage/'.$books->image)}}" />
+@endsection
 
 @section('content')
 
@@ -53,7 +61,7 @@
     <div class="col col-md-4">
       <div class="share">
         <p>Share book on social media</p>
-        <a href="#" title="Share on Facebook"><img src="{{asset('images/fb.png')}}" height="40" alt=""></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{url()->current()}}" target="_blank" title="Share on Facebook"><img src="{{asset('images/fb.png')}}" height="40" alt=""></a>
         <a href="#" title="Share on Twitter"><img src="{{asset('images/tw.png')}}" height="40" alt=""></a>
         <a href="#" title="Share on Instagram"><img src="{{asset('images/ins.png')}}" height="40" alt=""></a>
       </div>
